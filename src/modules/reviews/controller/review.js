@@ -1,6 +1,6 @@
 import { asyncHandler } from '../../../utils/errorHandling.js';
 import reviewModel from '../../../../DB/model/Reviews.model.js';
-import orderModel from '../../../../DB/model/Order.Model.js';
+import orderModel from '../../../../DB/model/Order.model.js';
 export const createReview = asyncHandler(async (req, res, next) => {
   const { productId } = req.params;
   const { comment, rating, orderId } = req.body;

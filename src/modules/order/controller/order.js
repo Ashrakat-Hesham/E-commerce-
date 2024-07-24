@@ -1,11 +1,10 @@
 import couponModel from '../../../../DB/model/Coupon.model.js';
-import orderModel from '../../../../DB/model/Order.Model.js';
 import productModel from '../../../../DB/model/Product.model.js';
 import cartModel from '../../../../DB/model/Cart.Model.js';
 import { asyncHandler } from '../../../utils/errorHandling.js';
 import { StatusCodes } from 'http-status-codes';
 import { emptyCart, removeProduct } from '../../cart/controller/cart.js';
-
+import orderModel from '../../../../DB/model/Order.model.js';
 //    to remove all items from cart for a specific user after ordering or create order by selected products in user cart
 export const createOrder = asyncHandler(async (req, res, next) => {
   const { couponName, paymentType, address, phone, note } = req.body;
