@@ -1,6 +1,6 @@
 import couponModel from '../../../../DB/model/Coupon.model.js';
 import productModel from '../../../../DB/model/Product.model.js';
-import cartModel from '../../../../DB/model/Cart.Model.js';
+import cartModel from '../../../../DB/model/Cart.model.js';
 import { asyncHandler } from '../../../utils/errorHandling.js';
 import { StatusCodes } from 'http-status-codes';
 import { emptyCart, removeProduct } from '../../cart/controller/cart.js';

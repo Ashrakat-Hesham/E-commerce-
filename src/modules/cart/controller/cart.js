@@ -1,6 +1,6 @@
 import { StatusCodes } from 'http-status-codes';
 import productModel from '../../../../DB/model/Product.model.js';
-import cartModel from '../../../../DB/model/Cart.Model.js';
+import cartModel from '../../../../DB/model/Cart.model.js';
 import { asyncHandler } from '../../../utils/errorHandling.js';
 
 export const createCart = asyncHandler(async (req, res, next) => {
